@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "202e1a57-6287-4d05-b02e-8f56e5900837",
+		"name": "Heros Association Reactive Spring",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get all heroes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/hero/v1/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hero",
+						"v1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get a hero",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/hero/v1/60a7c8fddb21e10375f10b8f",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hero",
+						"v1",
+						"60a7c8fddb21e10375f10b8f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add a hero",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Saitama\",\r\n    \"className\": \"C\",\r\n    \"rank\": \"7\",\r\n    \"registerDate\": \"2021-01-10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/hero/v1/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hero",
+						"v1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update a hero",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Genos\",\r\n    \"className\": \"C\",\r\n    \"rank\": \"5\",\r\n    \"registerDate\": \"2021-01-10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/hero/v1/60a7c8fddb21e10375f10b8f",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hero",
+						"v1",
+						"60a7c8fddb21e10375f10b8f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete a hero",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/hero/v1/123",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hero",
+						"v1",
+						"123"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
